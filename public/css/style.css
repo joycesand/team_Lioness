@@ -160,7 +160,7 @@ body {
 .nav-link::before {
     height: 20px;
     width: 100%;
-    font-family: Raleway;
+    font-family: 'Raleway';
     width: calc(100% - 36px);
     border-bottom-right-radius: 20px;
     border-bottom: 1px solid whitesmoke;
@@ -169,7 +169,7 @@ body {
 }
 
 .nav-link::after {
-    font-family: Raleway;
+    font-family: 'Raleway';
     height: calc(100% - 19px);
     border-left: 1px solid coral;
 }
