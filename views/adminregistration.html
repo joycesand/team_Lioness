@@ -28,7 +28,7 @@
                     <h4 class="card-title text-center pt-1"></h4>
                 </h2>
                 <article class="card-body"></article>
-                <form class="needs-validation" novalidate="" name="adminregistration" method="POST" action="/adminregistration" onSubmit="return +formValidation();">
+                <form action="http://localhost:3002/adminregistration" method="POST">
                     <div class="form-row">
                         <div class="col form-group"><label>First name</label><input class="form-control" type="text" name="adminfirstname" id="adminfirstname" placeholder="Enter first name" required="required" data-required-msg="First Name is required" /></div>
                         <div class="col form-group"><label>Last name</label><input class="form-control" type="text" name="adminlastname" id="adminlastname" placeholder="Enter last name" required="required" data-required-msg="Last Name is required" /></div>
@@ -38,8 +38,11 @@
                         <div class="col form-group"><label>Email address</label><input class="form-control" type="email" name="adminemailaddress" id="adminemailaddress" placeholder="Enter email address" required="required" data-required-msg="Email address is required" /></div>
                         <div class="col form-group"><label>Physical address</label><input class="form-control" type="text" name="adminphysicaladdress" id="adminphysicaladdress" placeholder="Enter physical address" required="required" data-required-msg="Physical address is required"
                             /></div>
-                    </div>
 
+                    </div>
+                    <div class="form-row">
+
+                    </div>
                     <div class="form-row" required="required">
                         <div class="col form-group"><label class="form-check form-check-inline"><input class="form-check-input" type="radio" name="admingender" value="male" /><span class="form-check-label">Male</span></label></div>
                         <div class="col form-group"><label class="form-check form-check-inline"><input class="form-check-input" type="radio" name="admingender" value="female" /><span class="form-check-label">Female</span></label></div>
@@ -49,7 +52,7 @@
                         <div class="col form-group"><label>Confirm password</label><input class="form-control" type="password" name="adminpassword1" id="adminpassword1" placeholder="Enter password" required="required" data-required-msg="Password is required" /></div>
                     </div>
                     <div class="form-row">
-                        <div class="col form-group"><button class="btn btn-info btn-block" type="submit">Register</button>
+                        <div class="col form-group"><button class="btn btn-success btn-block" type="submit">Register</button>
                             <!-- <a class="btn btn-secondary btn-block" href="/adminlogin" style="color: white;">Login if you have an account already </a></div> -->
                         </div>
 
@@ -61,7 +64,7 @@
 
 
 
-        <script src="../public/js/form-validation.js"></script>
+        <script src="/js/form-validation.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
         </script>
         <script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js">
