@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japotech</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <link rel="stylesheet" href="stylesheet/styles.css" />
+    <link rel="stylesheet" href="stylesheet/bootstrap.min.css" />
+    <link rel="shortcut icon" href="../images/logo2.jpg" type="image/png" />
+
+</head>
+
+<body>
+
+    <div class="row justify-content-center">
+        <div class="col-md-4" style="margin-top:90px;">
+            <div class="card-body border">
+                <h2 class="card-header text-center">Client Login
+                    <h4 class="card-title text-center pt-1"> </h4>
+                </h2>
+                <form class="needs-validation" novalidate="" action="/cutomerlogin" method="POST">
+                    <div class="form-row">
+                        <div class="col form-group"><label>User Name</label><input class="form-control" type="text" name="adminemailaddress" id="adminemailaddress" placeholder="Enter username" required="required" data-required-msg="Username is required" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col form-group"><label>Enter Your Password</label><input class="form-control" type="password" name="adminpassword" id="adminpassword" placeholder="Enter password" required="required" data-required-msg="Password is required" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col form-group"><button class="btn btn-success btn-block" type="submit">Login</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="/js/form-validation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
+    </script>
+    <script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

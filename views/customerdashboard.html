@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japotech </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <link rel="stylesheet" href="stylesheet/styles.css" />
+    <link rel="stylesheet" href="stylesheet/bootstrap.min.css" />
+    <link rel="shortcut icon" href="../images/logo2.jpg" type="image/png" />
+
+</head>
+
+<body>
+
+    <div class="row justify-content-center">
+        <div class="col-md-5" style="margin-top:90px;">
+            <article class="card-body">
+                <form class="needs-validation" novalidate="" name="customerdashboard" method="POST" action="/customerdashboard">
+                    <div class="form-row">
+                        <div class="col form-group"><label>Choose Drug</label><select class="form-control" id="inputState" name="drugname">
+                                <option>Choose...</option>
+                                <option value="paracetamol">paracetamol</option>
+                                <option value="quinine">quinine</option>
+                                <option value="neomicine">neomicine</option>
+                            </select>
+                            <div class="invalid-feedback">Valid drug name is required and not more than 45 characters..</div>
+                        </div>
+                    </div>
+                </form>
+                <div class="form-row">
+                    <div class="col form-group"><label>Drug Prescription</label><textarea class="form-control" name="drugprescription" rows="3" type="text" id="drugprescription" placeholder="Enter drug prescription here..." required="required" data-required-msg="Drug description is required"></textarea></div>
+                </div>
+                <div class="form-row">
+                    <div class="col form-group"><button class="btn btn-info btn-block" type="submit">Submit</button></div>
+                </div>
+
+            </article>
+        </div><a class="mm-top" href="/adminlogout" style="color: green;">Logout </a>
+    </div>
+
+
+    <script src="/js/form-validation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
+    </script>
+    <script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

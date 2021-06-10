@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japotech</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <link rel="stylesheet" href="stylesheet/styles.css" />
+    <link rel="stylesheet" href="stylesheet/bootstrap.min.css" />
+    <link rel="shortcut icon" href="../images/logo2.jpg" type="image/png" />
+
+</head>
+
+<body>
+
+    <div class="row justify-content-center">
+        <div class="col-md-7" style="margin-top:90px;">
+            <div class="card-body border">
+                <h2 class="card-title text-center card-header"> Customer Registration
+                    <h4 class="card-title text-center pt-1"> </h4>
+                </h2>
+                <article class="card-body"></article>
+                <form class="needs-validation" novalidate="" name="customerregistration" method="POST" action="/customerregistration" onSubmit="return +formValidation();">
+                    <div class="form-row">
+                        <div class="col form-group"><label>First name</label><input class="form-control" type="text" name="customerfirstname" id="customerfirstname" placeholder="Enter first name" required="required" data-required-msg="First Name is required" /></div>
+                        <div class="col form-group"><label>Last name</label><input class="form-control" type="text" name="customerlastname" id="customerlastname" placeholder="Enter last name" required="required" data-required-msg="Last Name is required" /></div>
+                        <div class="col form-group"><label>User name</label><input class="form-control" type="text" name="customerusername" id="customerusername" placeholder="Enter username" required="required" data-required-msg="Username is required" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col form-group"><label>Phone Contact</label><input class="form-control" type="number" name="customerphone" id="customerphone" placeholder="Enter phone contact" required="required" data-required-msg="phone contact is required" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col form-group"><label>Email address</label><input class="form-control" type="email" name="customeremailaddress" id="customeremailaddress" placeholder="Enter email address" required="required" data-required-msg="Email address is required" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col form-group"><label>Physical address</label><input class="form-control" type="text" name="customerphysicaladdress" id="customerphysicaladdress" placeholder="Enter physical address" required="required" data-required-msg="Physical address is required"
+                            /></div>
+                    </div>
+                    <div class="form-row" required="required">
+                        <div class="col form-group"><label class="form-check form-check-inline"><input class="form-check-input" type="radio" name="customergender" value="male" /><span class="form-check-label">Male</span></label></div>
+                        <div class="col form-group"><label class="form-check form-check-inline"><input class="form-check-input" type="radio" name="customergender" value="female" /><span class="form-check-label">Female</span></label></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col form-group"><label>Create password</label><input class="form-control" type="password" name="customerpassword" id="customerpassword" placeholder="Enter password" required="required" data-required-msg="Password is required" /></div>
+                        <div class="col form-group"><label>Confirm password</label><input class="form-control" type="password" name="customerpassword1" id="customerpassword1" placeholder="Enter password" required="required" data-required-msg="Password is required" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col form-group"><button class="btn btn-success btn-block" type="submit">Register</button></div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/form-validation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
+    </script>
+    <script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
